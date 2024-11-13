@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .error{
+        color: red;
+        display: none;
+    }
+</style>
+<body>
+    <h1> register form</h1>
+    email : <input name="email" id="email" type="email">
+    <span class="error">invalid email</span>
+    password : <input onkeyup="validatepassword()" type="password" name="password" id="password"><br><br> 
+
+    capital letter<input type="checkbox" value="capital letter" disabled><br>
+    number:<input type="checkbox" value="number"disabled><br>
+    special character<input type="checkbox" value="special character" disabled><br>
+   length grater than 10<input type="checkbox" value="length must be grater than 10" id="length"disabled><br>
+   <button type="submit" id="registerbtn"disabled>register</button>
+
+
+    <script src="Password.js"></script>
+</body>
+</html>
